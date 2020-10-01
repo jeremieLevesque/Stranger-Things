@@ -5,7 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Stranger Things</title>
   <style>
-	  .classimg
+	.classimg{
+		  transition-duration:0.3s ;
+		  
+		 
+
+		  }
+		.classimg:hover{
+		  transform:scale(1.05);
+		  }
 	body{
 		  background-color: black;
 		  display:flex;
@@ -17,14 +25,18 @@
 	margin-left: auto;
 	margin-right: auto;
 	height:auto;
-	width:100vw;
-	
-
+	width:100%;
 	}
-
+.text{
+	transition-duration:0.3s ;	
+}
+.text:hover
+{
+		  background-color: #dddddd;
+		  }
   .text{
-    width:50%;
-    transform: translate(50%) skewY(2deg);
+    width:100%;
+    transform:  skewY(2deg);
   }
 
 
@@ -85,35 +97,36 @@
 		}
 	p {
 		color: black;
-		font-family: Arial, Helvetica, sans-serif;S
+		font-family: Arial, Helvetica, sans-serif;
 		font-weight: normal;
 		font-size: 16px;
 		}
-		
-		@media(min-width:900px){
-		.classimg{
-			width:50%;
-		}
-		 body{
-		 
-			 flex-direction:row;
-			 flex-wrap:wrap;
-		}
-		}
-		
-		@media(min-width:600px){
+		@media (min-width:600px){
+			body{
+				
+				flex-direction: row;
+				flex-wrap: wrap;
+			}
 			.classimg{
-			width:50%;
+				width:50%;
+			}
 		}
-		 body{
-			 flex-direction:row;
-			 flex-wrap:nowrap;
+		@media (min-width:900px){
+			body{
+				
+				flex-direction: row;
+				flex-wrap: nowrap;
+			}
+			.classimg{
+				width:50%;
+
+			}
 		}
-		}
+		
   </style>
 </head>
 <body>
-	<div id="classeimg">
+	<div class="classimg">
 	<div id="imgDustin">
   		<img src="https://i.imgur.com/rvoU6Oo.png" alt="Dustin" class="Dustin">
 	</div>
@@ -121,8 +134,8 @@
 	   <h2>Dustin</h2>
 		   <p>Dustin est rempli d'énergie et exubérant à souhait. Sa façon de s'exprimer et ses plaisanteries constantes font de lui un personnage digne d'un roman de Stephen King.</p>
    </div>
-					</div>
-   				<div id="classeimg">
+</div>
+   <div class="classimg">
    <div id="imgLucas">
   	 <img src="https://i.imgur.com/5zlzGkw.png" alt="Lucas" class="Lucas">
 	</div>
@@ -130,24 +143,25 @@
 	   <h2>Lucas</h2>
 		   <p>Lucas est initialement sceptique quant à l'arrivée d'Onze dans le groupe, mais finit par l'accepter. Geek, comme le reste de ses amis, il manie adroitement une fronde, ce qui se révèle utile contre le Demogorgon.</p>
    </div>
-					</div>
-					<div id="classeimg">
-<div id="imgOnze">
+</div>
+   <div class="classimg">
+   <div id="imgOnze">
 	   <img src="https://i.imgur.com/vIMCZqA.png" alt="Onze" class="Onze">
 	</div>
    <div class="text">
 	   <h2>Onze</h2>
 		   <p>Onze, de son vrai nom: Jane Ives, est la super-héroïne de Stranger Things. Elle est la seule à posséder des super pouvoirs. D'un simple saignement de nez, elle peut réaliser des choses impressionnantes avec son esprit et sauver ses camarades.</p>
    </div>
-						</div>
-   				<div id="classeimg">
+</div>
+   <div class="classimg">
    <div id="imgMike">
 	   <img src="https://i.imgur.com/3eG4ete.png" alt="Mike" class="Mike">
 	</div>
    <div class="text">
 	   <h2>Mike</h2>
 		   <p>La série est centrée sur Mike et sa famille. Il est celui qui accueil Onze et se soucie le plus d'elle. Bienveillant, il aime Star Wars, Dungeons et Dragons et compagnie</p>
-   </div>
-						</div>
+		</div>
+</div>
+
 </body>
 </html>
